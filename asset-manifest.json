@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/blackjackGame/static/css/main.66d7dd50.css",
+    "main.js": "/blackjackGame/static/js/main.9374e736.js",
+    "static/js/453.81bfb3d6.chunk.js": "/blackjackGame/static/js/453.81bfb3d6.chunk.js",
+    "static/media/casino11.png": "/blackjackGame/static/media/casino11.03e4cd7dd321d993b562.png",
+    "static/media/Blackjack_board.jpeg": "/blackjackGame/static/media/Blackjack_board.6ac12964c2a9067dc06d.jpeg",
+    "index.html": "/blackjackGame/index.html",
+    "main.66d7dd50.css.map": "/blackjackGame/static/css/main.66d7dd50.css.map",
+    "main.9374e736.js.map": "/blackjackGame/static/js/main.9374e736.js.map",
+    "453.81bfb3d6.chunk.js.map": "/blackjackGame/static/js/453.81bfb3d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66d7dd50.css",
+    "static/js/main.9374e736.js"
+  ]
+}
