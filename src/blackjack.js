@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import chipImage from ".//assets/casino11.png"
-
-
 import { getRandomCard } from './utils/cardLogic'; 
 // NOTE: Ensure './utils/cardLogic' exports a function called getRandomCard()
 // that returns the numerical value of a drawn card (e.g., 2-11).
@@ -56,7 +54,7 @@ function Blackjack() {
 
         // Check against the player's total chips
         if (playerChips >= betAmount + value) {
-            setBetAmount(prev => prev + value);
+            setBetAmount(betAmount + value);
             // Add chip value to the display array
             setChipsOnTable(prev => [...prev, value]); 
             setMessage(`Current Bet: $${betAmount + value}`);
@@ -216,7 +214,7 @@ function Blackjack() {
 
             {/* DEALER HAND AND SUM */}
             <div className="dealer-area">
-                <div className="sum-display">{isGameActive ? '?' : dealerSum}</div>
+                <div className="sum-display">{isGameActive && '?' }</div>
                 <div className="hand-display dealer-hand">
                     {dealerCards.map((card, index) => (
                         <div key={index} className="card-tile">
@@ -229,7 +227,7 @@ function Blackjack() {
 
             {/* PLAYER HAND AND SUM */}
             <div className="player-area">
-                <div className="sum-display">{playerSum}</div>
+                <div className="sum-display">{isGameActive && playerSum}</div>
                 <div className="hand-display player-hand">
                     {playerCards.map((card, index) => (
                         <div 
