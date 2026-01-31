@@ -3,8 +3,6 @@ import chipImage from ".//assets/casino11.png"
 
 
 import { getRandomCard } from './utils/cardLogic'; 
-// NOTE: Ensure './utils/cardLogic' exports a function called getRandomCard()
-// that returns the numerical value of a drawn card (e.g., 2-11).
 
 // Define the chip values available for betting
 const CHIP_VALUES = [1, 10, 100, 500];
